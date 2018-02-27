@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:padding="8dp"
+    tools:context="com.udacity.sandwichclub.DetailActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <RelativeLayout
+            android:id="@+id/form_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           >
+
+    <ImageView
+        android:id="@+id/image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/sandwich_picture_content_description"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+
+         />
+
+    <TextView
+        android:id="@+id/MainName__Lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/image_iv"
+        android:paddingBottom="8dp"
+
+        android:paddingTop="8dp"
+        android:text="Name:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/MainName_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/MainName__Lbl"
+        android:layout_toRightOf="@id/MainName__Lbl"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/also_known_Lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/MainName__Lbl"
+
+
+        android:paddingBottom="8dp"
+        android:text="@string/detail_also_known_as_label"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/also_known_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@id/also_known_Lbl"
+        android:layout_toRightOf="@id/also_known_Lbl"
+        android:paddingBottom="8dp"
+
+        android:paddingLeft="8dp" />
+
+    <TextView
+        android:id="@+id/ingredients_Lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/also_known_tv"
+
+        android:paddingBottom="8dp"
+        android:text="@string/detail_ingredients_label"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ingredients_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ingredients_Lbl"
+        android:layout_toRightOf="@id/ingredients_Lbl"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp" />
+
+    <TextView
+        android:id="@+id/description_Lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/ingredients_tv"
+        android:paddingBottom="8dp"
+        android:text="@string/detail_description_label"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/description_Lbl"
+        android:layout_toRightOf="@id/description_Lbl"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp" />
+
+            <TextView
+                android:id="@+id/origin_Lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/description_tv"
+
+                android:paddingBottom="8dp"
+                android:text="@string/detail_place_of_origin_label"
+                android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/origin_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/origin_Lbl"
+        android:layout_toRightOf="@id/origin_Lbl"
+        android:paddingBottom="8dp"
+
+        android:paddingLeft="8dp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
